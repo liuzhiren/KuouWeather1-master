@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61">
+        <Button
+            android:id="@+id/switch_city"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home1"
+            />
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/city_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#fff"
+           />
+        <Button
+            android:id="@+id/refresh_data"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/refresh"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/background_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backguound">
+        <TextView
+            android:id="@+id/update_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="24sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/now_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="24sp"
+
+                android:layout_above="@+id/weather_data"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/weather_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="60sp"/>
+            <LinearLayout
+                android:id="@+id/weather_info_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:id="@+id/temp1_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="50sp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/temp1_data"
+                    android:layout_alignRight="@+id/temp2_data"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:text="~"
+                    android:textSize="50sp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/temp2_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="50sp"
+                    android:paddingTop="10dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

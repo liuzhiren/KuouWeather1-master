@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="practice.kuouweather"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="月光宝盒"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name=".activity.ChooseAreaActivity"
+            android:label="月光宝盒">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WeatherLActivity">
+        </activity>
+        <activity android:name=".activity.ListCityActivity">
+        </activity>
+
+        <receiver android:name=".receiver.AutoUpdateWeatherRecivce">
+        </receiver>
+
+        <service android:name=".service.AutoUpdateWeatherService">
+        </service>
+
+    </application>
+
+</manifest>

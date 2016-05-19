@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/close_Auto_Upadate_Service"
+          android:title="关闭自动更新"></item>
+    <item android:id="@+id/open_Auto_Upadate_Service"
+          android:title="打开自动更新"></item>
+    <item android:id="@+id/setting"
+          android:title="设置"></item>
+</menu>
